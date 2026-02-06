@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragavendiran | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap FIRST -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Your CSS MUST be AFTER Bootstrap -->
-    <link rel="stylesheet" href="style.css">
+    <!-- ONLY ONE CSS FILE -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -25,111 +22,84 @@
     </nav>
 </header>
 
-<section class="front" id="home">
+<section id="home" class="front">
     <h1>Hi, I’m Ragavendiran 👋</h1>
-    <h3>Software Enthusiast | Java | AI | IoT</h3>
+    <p class="muted">Software Enthusiast | Java | AI | IoT</p>
     <a href="#projects" class="primary-btn">View My Work</a>
 </section>
 
 <section id="about" class="section">
     <h2 class="section-title">About Me</h2>
-    <p class="section-subtitle">Passionate about software & real-world innovation</p>
+    <p class="section-subtitle">Passionate about software and innovation</p>
 
-    <div class="about-container">
-        <div class="about-left">
-            <p>
+    <div class="grid-2">
+        <div>
+            <p class="muted">
                 Final year EEE student with strong interest in software development.
-                I enjoy working with Java, C, SQL, HTML and CSS, and solving problems
-                on competitive coding platforms.
+                Experienced in Java, C, SQL, HTML and CSS.
             </p>
-            <p>
-                Interested in AI-driven systems, IoT innovations and full-stack development.
-            </p>
-
-            <a href="IT_RESUME_RAGAVENDIRAN.pdf" class="primary-btn" download>
+            <a class="primary-btn" href="IT_RESUME_RAGAVENDIRAN.pdf" download>
                 Download Resume
             </a>
         </div>
 
-        <div class="about-right">
-            <div class="info-card">
-                <h4>Education</h4>
-                <p>B.E EEE – Sri Sai Ram Institute of Technology (2026)</p>
-            </div>
-            <div class="info-card">
-                <h4>Development</h4>
-                <p>Java, C, SQL, OOP fundamentals</p>
-            </div>
-            <div class="info-card">
-                <h4>Innovation</h4>
-                <p>AI & IoT based real-world solutions</p>
-            </div>
+        <div class="card">
+            <h3>Education</h3>
+            <p class="muted">B.E EEE – Sri Sai Ram Institute of Technology (2026)</p>
         </div>
     </div>
 </section>
 
 <section id="skills" class="section">
     <h2 class="section-title">Skills</h2>
-    <p class="section-subtitle">Technologies I work with</p>
 
-    <div class="skills-container">
-        <div class="skill-card">Java, Python, C</div>
-        <div class="skill-card">HTML, CSS</div>
-        <div class="skill-card">SQL, MongoDB</div>
-        <div class="skill-card">TensorFlow, OpenCV</div>
-        <div class="skill-card">Arduino, ESP32</div>
+    <div class="grid-3">
+        <div class="card">Java, Python, C</div>
+        <div class="card">HTML, CSS</div>
+        <div class="card">SQL, MongoDB</div>
+        <div class="card">TensorFlow, OpenCV</div>
+        <div class="card">Arduino, ESP32</div>
     </div>
 </section>
 
 <section id="projects" class="section">
     <h2 class="section-title">Projects</h2>
-    <p class="section-subtitle">Academic & personal work</p>
 
-    <div class="projects-container">
-        <div class="project-card">
+    <div class="grid-2">
+        <div class="card">
             <h3>Conveyor Belt Breakdown Detector</h3>
-            <p>
-                IoT system using ESP32-CAM and ML to detect conveyor belt faults
-                and predict maintenance.
+            <p class="muted">
+                IoT + ML system using ESP32-CAM for fault detection.
             </p>
         </div>
 
-        <div class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>
-                Responsive portfolio website built using HTML & CSS.
-            </p>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p class="muted">Built using pure HTML and CSS.</p>
         </div>
     </div>
 </section>
 
 <section id="contact" class="section">
-    <h2 class="section-title">Get in Touch</h2>
-    <p class="section-subtitle">Let’s connect</p>
+    <h2 class="section-title">Contact</h2>
 
-    <div class="contact-container">
-        <div class="contact-info">
-            <p>Email: ragavendiran.2004jamuna@gmail.com</p>
-            <p>Phone: +91 9786668578</p>
-            <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/ragavendiran-p-89b632257/" target="_blank">
-                    ragavendiran-p
-                </a>
-            </p>
+    <div class="grid-2">
+        <div class="card">
+            <p class="muted">Email: ragavendiran.2004jamuna@gmail.com</p>
+            <p class="muted">Phone: +91 9786668578</p>
         </div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button class="primary-btn" type="submit">Send Message</button>
+        <form class="card">
+            <input placeholder="Your Name">
+            <input placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="primary-btn">Send</button>
         </form>
     </div>
 </section>
 
 <footer class="footer">
-    <p>© 2026 Ragavendiran P</p>
+    © 2026 Ragavendiran P
 </footer>
 
 </body>

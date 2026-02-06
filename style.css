@@ -1,13 +1,3 @@
-/* ================= RESET ================= */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ================= COLORS ================= */
 :root {
     --bg: #0b1020;
     --card: #1a2140;
@@ -16,40 +6,29 @@
     --muted: #cbd5e1;
 }
 
-/* ================= HARD OVERRIDE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
-    background-color: var(--bg) !important;
-    color: var(--text) !important;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, sans-serif;
 }
 
-/* Kill Bootstrap black text */
-body, body * {
-    color: var(--text) !important;
-}
+a { color: var(--accent); text-decoration: none; }
 
-/* ================= NAVBAR ================= */
 .navbar {
-    background-color: #11162a !important;
-    padding: 14px 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 16px 10%;
+    background: #11162a;
 }
 
-.sub_navbar a {
-    text-decoration: none;
-    margin-left: 24px;
-    font-weight: 500;
-}
+.sub_navbar a { margin-left: 20px; }
 
-.sub_navbar a:hover {
-    color: var(--accent) !important;
-}
-
-/* ================= HERO ================= */
 .front {
     min-height: 90vh;
     display: flex;
@@ -59,144 +38,59 @@ body, body * {
     text-align: center;
 }
 
-.front h3 {
-    color: var(--muted) !important;
-    margin-top: 10px;
-}
-
-/* ================= BUTTON ================= */
-.primary-btn {
-    margin-top: 25px;
-    padding: 12px 28px;
-    background-color: var(--accent) !important;
-    color: #020617 !important;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    border: none;
-}
-
-/* ================= SECTIONS ================= */
 .section {
     padding: 80px 10%;
 }
 
 .section-title {
     text-align: center;
-    color: var(--accent) !important;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--muted) !important;
-    margin-bottom: 50px;
-}
-
-/* ================= ABOUT ================= */
-.about-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.about-left {
-    flex: 2;
-}
-
-.about-left p {
-    margin-bottom: 16px;
-    line-height: 1.7;
-    color: var(--muted) !important;
-}
-
-.about-right {
-    flex: 1;
-}
-
-.info-card {
-    background-color: var(--card) !important;
-    padding: 22px;
-    border-radius: 14px;
+    color: var(--accent);
     margin-bottom: 20px;
 }
 
-/* ================= SKILLS ================= */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
+.section-subtitle,
+.muted {
+    color: var(--muted);
 }
 
-.skill-card {
-    background-color: var(--card) !important;
-    padding: 22px;
-    border-radius: 14px;
-    text-align: center;
-}
-
-/* ================= PROJECTS ================= */
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
-}
-
-.project-card {
-    background-color: var(--card) !important;
-    padding: 26px;
-    border-radius: 16px;
-}
-
-.project-card h3 {
-    color: var(--accent) !important;
-}
-
-/* ================= CONTACT ================= */
-.contact-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.contact-info p {
-    color: var(--muted) !important;
-}
-
-.contact-info a {
-    color: var(--accent) !important;
-}
-
-.contact-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
+.primary-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: #020617;
     border-radius: 8px;
     border: none;
-    background-color: #020617 !important;
-    color: var(--text) !important;
 }
 
-/* ================= FOOTER ================= */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 24px;
+    border-radius: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #020617;
+    border: none;
+    color: var(--text);
+}
+
 .footer {
-    background-color: #11162a !important;
     text-align: center;
     padding: 20px;
-    color: var(--muted) !important;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 14px 20px;
-    }
-
-    .section {
-        padding: 60px 6%;
-    }
+    background: #11162a;
 }

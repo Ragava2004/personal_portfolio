@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragavendiran | Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap FIRST -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Your CSS MUST be AFTER Bootstrap -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= Navbar ================= -->
 <header class="navbar">
     <div class="name">Ragavendiran P</div>
     <nav class="sub_navbar">
@@ -24,36 +25,28 @@
     </nav>
 </header>
 
-<!-- ================= Hero ================= -->
 <section class="front" id="home">
     <h1>Hi, I’m Ragavendiran 👋</h1>
-    <h3>Software enthusiast | Java | AI | IoT</h3>
+    <h3>Software Enthusiast | Java | AI | IoT</h3>
     <a href="#projects" class="primary-btn">View My Work</a>
 </section>
 
-<!-- ================= About ================= -->
 <section id="about" class="section">
     <h2 class="section-title">About Me</h2>
-    <p class="section-subtitle">
-        Passionate about software development and real-world innovation
-    </p>
+    <p class="section-subtitle">Passionate about software & real-world innovation</p>
 
     <div class="about-container">
         <div class="about-left">
-            <h3>My Journey</h3>
             <p>
-                I’m a final year EEE student who discovered a strong passion for
-                software development and problem solving. I enjoy working with
-                Java, C, SQL, HTML, and CSS, and I actively practice coding on
-                platforms like LeetCode and Skillrack.
+                Final year EEE student with strong interest in software development.
+                I enjoy working with Java, C, SQL, HTML and CSS, and solving problems
+                on competitive coding platforms.
             </p>
             <p>
-                My interests include AI-driven systems, IoT innovations, and
-                full-stack development, with the goal of building impactful,
-                real-world solutions.
+                Interested in AI-driven systems, IoT innovations and full-stack development.
             </p>
 
-            <a href="IT_RESUME_RAGAVENDIRAN.pdf" download class="primary-btn">
+            <a href="IT_RESUME_RAGAVENDIRAN.pdf" class="primary-btn" download>
                 Download Resume
             </a>
         </div>
@@ -61,23 +54,22 @@
         <div class="about-right">
             <div class="info-card">
                 <h4>Education</h4>
-                <p>B.E. EEE – Sri Sai Ram Institute of Technology (2026)</p>
+                <p>B.E EEE – Sri Sai Ram Institute of Technology (2026)</p>
             </div>
             <div class="info-card">
                 <h4>Development</h4>
-                <p>Strong foundation in Java, C, SQL & OOP concepts</p>
+                <p>Java, C, SQL, OOP fundamentals</p>
             </div>
             <div class="info-card">
                 <h4>Innovation</h4>
-                <p>AI & IoT solutions for real-world problems</p>
+                <p>AI & IoT based real-world solutions</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ================= Skills ================= -->
 <section id="skills" class="section">
-    <h2 class="section-title">Skills & Expertise</h2>
+    <h2 class="section-title">Skills</h2>
     <p class="section-subtitle">Technologies I work with</p>
 
     <div class="skills-container">
@@ -85,45 +77,42 @@
         <div class="skill-card">HTML, CSS</div>
         <div class="skill-card">SQL, MongoDB</div>
         <div class="skill-card">TensorFlow, OpenCV</div>
-        <div class="skill-card">Arduino, ESP32, Sensors</div>
+        <div class="skill-card">Arduino, ESP32</div>
     </div>
 </section>
 
-<!-- ================= Projects ================= -->
 <section id="projects" class="section">
     <h2 class="section-title">Projects</h2>
-    <p class="section-subtitle">Some of my notable works</p>
+    <p class="section-subtitle">Academic & personal work</p>
 
     <div class="projects-container">
         <div class="project-card">
             <h3>Conveyor Belt Breakdown Detector</h3>
             <p>
-                IoT-based intelligent monitoring system using ESP32-CAM and
-                machine learning to detect belt cracks and predict maintenance.
+                IoT system using ESP32-CAM and ML to detect conveyor belt faults
+                and predict maintenance.
             </p>
         </div>
 
         <div class="project-card">
             <h3>Personal Portfolio</h3>
             <p>
-                Responsive portfolio website built using HTML & CSS to showcase
-                my skills, projects, and contact details.
+                Responsive portfolio website built using HTML & CSS.
             </p>
         </div>
     </div>
 </section>
 
-<!-- ================= Contact ================= -->
 <section id="contact" class="section">
     <h2 class="section-title">Get in Touch</h2>
-    <p class="section-subtitle">Let’s connect and collaborate</p>
+    <p class="section-subtitle">Let’s connect</p>
 
     <div class="contact-container">
         <div class="contact-info">
-            <p><strong>Email:</strong> ragavendiran.2004jamuna@gmail.com</p>
-            <p><strong>Phone:</strong> +91 9786668578</p>
+            <p>Email: ragavendiran.2004jamuna@gmail.com</p>
+            <p>Phone: +91 9786668578</p>
             <p>
-                <strong>LinkedIn:</strong>
+                LinkedIn:
                 <a href="https://www.linkedin.com/in/ragavendiran-p-89b632257/" target="_blank">
                     ragavendiran-p
                 </a>
@@ -131,17 +120,16 @@
         </div>
 
         <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
             <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit" class="primary-btn">Send Message</button>
+            <button class="primary-btn" type="submit">Send Message</button>
         </form>
     </div>
 </section>
 
-<!-- ================= Footer ================= -->
 <footer class="footer">
-    <p>© 2026 Ragavendiran P | Built with HTML & CSS</p>
+    <p>© 2026 Ragavendiran P</p>
 </footer>
 
 </body>

@@ -1,4 +1,4 @@
-/* ================= FORCE RESET ================= */
+/* ================= RESET ================= */
 *,
 *::before,
 *::after {
@@ -7,48 +7,36 @@
     box-sizing: border-box;
 }
 
-/* ================= COLOR SYSTEM ================= */
+/* ================= COLORS ================= */
 :root {
-    --bg: #0b1020;        /* main background */
-    --card: #1a2140;      /* card background */
-    --accent: #38bdf8;    /* accent color */
-    --text: #f8fafc;      /* main text */
-    --muted: #cbd5e1;     /* secondary text */
+    --bg: #0b1020;
+    --card: #1a2140;
+    --accent: #38bdf8;
+    --text: #f8fafc;
+    --muted: #cbd5e1;
 }
 
 /* ================= HARD OVERRIDE ================= */
-html {
-    background-color: var(--bg) !important;
-}
-
-body {
+html, body {
     background-color: var(--bg) !important;
     color: var(--text) !important;
+    width: 100%;
+    overflow-x: hidden;
     font-family: "Segoe UI", system-ui, sans-serif;
-    min-height: 100vh;
 }
 
-/* 🚨 KILLS BOOTSTRAP BLACK TEXT COMPLETELY */
-body,
-body * {
+/* Kill Bootstrap black text */
+body, body * {
     color: var(--text) !important;
 }
 
 /* ================= NAVBAR ================= */
 .navbar {
     background-color: #11162a !important;
+    padding: 14px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.name {
-    font-size: 1.2rem;
-    font-weight: 600;
 }
 
 .sub_navbar a {
@@ -64,7 +52,6 @@ body * {
 /* ================= HERO ================= */
 .front {
     min-height: 90vh;
-    background-color: var(--bg) !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,40 +59,31 @@ body * {
     text-align: center;
 }
 
-.front h1 {
-    font-size: 2.6rem;
-}
-
 .front h3 {
-    margin-top: 10px;
     color: var(--muted) !important;
+    margin-top: 10px;
 }
 
 /* ================= BUTTON ================= */
 .primary-btn {
-    margin-top: 28px;
+    margin-top: 25px;
     padding: 12px 28px;
     background-color: var(--accent) !important;
     color: #020617 !important;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-}
-
-.primary-btn:hover {
-    opacity: 0.9;
+    border: none;
 }
 
 /* ================= SECTIONS ================= */
 .section {
     padding: 80px 10%;
-    background-color: var(--bg) !important;
 }
 
 .section-title {
     text-align: center;
     color: var(--accent) !important;
-    margin-bottom: 8px;
 }
 
 .section-subtitle {
@@ -135,13 +113,11 @@ body * {
     flex: 1;
 }
 
-/* INFO CARDS */
 .info-card {
     background-color: var(--card) !important;
     padding: 22px;
     border-radius: 14px;
     margin-bottom: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* ================= SKILLS ================= */
@@ -156,8 +132,6 @@ body * {
     padding: 22px;
     border-radius: 14px;
     text-align: center;
-    font-weight: 500;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* ================= PROJECTS ================= */
@@ -171,12 +145,10 @@ body * {
     background-color: var(--card) !important;
     padding: 26px;
     border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
 .project-card h3 {
     color: var(--accent) !important;
-    margin-bottom: 12px;
 }
 
 /* ================= CONTACT ================= */
@@ -186,18 +158,12 @@ body * {
     flex-wrap: wrap;
 }
 
-.contact-info {
-    flex: 1;
-}
-
 .contact-info p {
-    margin-bottom: 14px;
     color: var(--muted) !important;
 }
 
 .contact-info a {
     color: var(--accent) !important;
-    text-decoration: none;
 }
 
 .contact-form {
@@ -216,16 +182,11 @@ body * {
     color: var(--text) !important;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #94a3b8 !important;
-}
-
 /* ================= FOOTER ================= */
 .footer {
     background-color: #11162a !important;
     text-align: center;
-    padding: 22px;
+    padding: 20px;
     color: var(--muted) !important;
 }
 
@@ -237,9 +198,5 @@ body * {
 
     .section {
         padding: 60px 6%;
-    }
-
-    .front h1 {
-        font-size: 2rem;
     }
 }

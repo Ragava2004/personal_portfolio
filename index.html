@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragavendiran Portfolio</title>
+    <title>Ragavendiran | Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -12,209 +12,137 @@
 
 <body>
 
-    <!-- Name -->
-    <p class="name">Ragavendiran P</p>
+<!-- ================= Navbar ================= -->
+<header class="navbar">
+    <div class="name">Ragavendiran P</div>
+    <nav class="sub_navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- ================= Navbar ================= -->
-    <div class="navbar">
-        <div class="sub_navbar">
-            <span><a href="#home" style="color:white;text-decoration:none;">Home</a></span>
-            <span><a href="#about" style="color:white;text-decoration:none;">About</a></span>
-            <span><a href="#skills" style="color:white;text-decoration:none;">Skills</a></span>
-            <span><a href="#projects" style="color:white;text-decoration:none;">Projects</a></span>
-            <span><a href="#contact" style="color:white;text-decoration:none;">Contact</a></span>
+<!-- ================= Hero ================= -->
+<section class="front" id="home">
+    <h1>Hi, I’m Ragavendiran 👋</h1>
+    <h3>Software enthusiast | Java | AI | IoT</h3>
+    <a href="#projects" class="primary-btn">View My Work</a>
+</section>
+
+<!-- ================= About ================= -->
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">
+        Passionate about software development and real-world innovation
+    </p>
+
+    <div class="about-container">
+        <div class="about-left">
+            <h3>My Journey</h3>
+            <p>
+                I’m a final year EEE student who discovered a strong passion for
+                software development and problem solving. I enjoy working with
+                Java, C, SQL, HTML, and CSS, and I actively practice coding on
+                platforms like LeetCode and Skillrack.
+            </p>
+            <p>
+                My interests include AI-driven systems, IoT innovations, and
+                full-stack development, with the goal of building impactful,
+                real-world solutions.
+            </p>
+
+            <a href="IT_RESUME_RAGAVENDIRAN.pdf" download class="primary-btn">
+                Download Resume
+            </a>
+        </div>
+
+        <div class="about-right">
+            <div class="info-card">
+                <h4>Education</h4>
+                <p>B.E. EEE – Sri Sai Ram Institute of Technology (2026)</p>
+            </div>
+            <div class="info-card">
+                <h4>Development</h4>
+                <p>Strong foundation in Java, C, SQL & OOP concepts</p>
+            </div>
+            <div class="info-card">
+                <h4>Innovation</h4>
+                <p>AI & IoT solutions for real-world problems</p>
+            </div>
         </div>
     </div>
+</section>
 
-    <br><br><br>
+<!-- ================= Skills ================= -->
+<section id="skills" class="section">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <p class="section-subtitle">Technologies I work with</p>
 
-    <!-- ================= Front Section ================= -->
-    <div class="front" id="home">
-        <img src="images/profile_pic.png" alt="Ragavendiran P" width="350" height="320"
-             style="border-radius:50%;border:2px solid white;">
-        <h1>Hi, I am Ragavendiran!</h1>
-        <h3>A passionate software enthusiast exploring innovative solutions.</h3>
+    <div class="skills-container">
+        <div class="skill-card">Java, Python, C</div>
+        <div class="skill-card">HTML, CSS</div>
+        <div class="skill-card">SQL, MongoDB</div>
+        <div class="skill-card">TensorFlow, OpenCV</div>
+        <div class="skill-card">Arduino, ESP32, Sensors</div>
+    </div>
+</section>
 
-        <div class="sub_front">
-            <span><a href="#projects" style="color:white;text-decoration:none;">View my work</a></span>
+<!-- ================= Projects ================= -->
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Some of my notable works</p>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Conveyor Belt Breakdown Detector</h3>
+            <p>
+                IoT-based intelligent monitoring system using ESP32-CAM and
+                machine learning to detect belt cracks and predict maintenance.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                Responsive portfolio website built using HTML & CSS to showcase
+                my skills, projects, and contact details.
+            </p>
         </div>
     </div>
+</section>
 
-    <br><br><br>
+<!-- ================= Contact ================= -->
+<section id="contact" class="section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Let’s connect and collaborate</p>
 
-    <!-- ================= About Section ================= -->
-    <section id="about">
-        <div class="sub_about">
-            <h2 style="color:rgb(2,175,255);">About Me</h2>
-            <h4>Passionate about software development, innovation, and next-gen solutions</h4>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><strong>Email:</strong> ragavendiran.2004jamuna@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9786668578</p>
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/ragavendiran-p-89b632257/" target="_blank">
+                    ragavendiran-p
+                </a>
+            </p>
         </div>
 
-        <div class="About_me_middle_container">
-
-            <!-- Left -->
-            <div class="sub1_about">
-                <h3 style="color:rgb(2,175,255);">My Journey</h3>
-                <p>
-                    I discovered my passion in software development and innovative technology solutions.
-                    I have hands-on experience with Java, C, SQL, HTML, and CSS, and actively sharpen my
-                    skills on platforms like LeetCode and SkillRack.
-                </p>
-                <p>
-                    I’m interested in AI, IoT, and full-stack development, aiming to build impactful
-                    real-world solutions that blend creativity with technology.
-                </p>
-
-                <div class="resume">
-                    <span>
-                        <a href="IT_RESUME_RAGAVENDIRAN.pdf" download style="color:white;text-decoration:none;">
-                            Download Resume
-                        </a>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Right -->
-            <div>
-                <div class="right_side1">
-                    <h2 style="color:rgb(116,211,255);">Education</h2>
-                    <p>Final year B.E. EEE student at Sri Sai Ram Institute of Technology (2026).</p>
-                </div>
-
-                <div class="right_side2">
-                    <h2 style="color:rgb(116,211,255);">Development</h2>
-                    <p>Strong in Java, C, SQL, OOP concepts, and competitive coding.</p>
-                </div>
-
-                <div class="right_side3">
-                    <h2 style="color:rgb(116,211,255);">Innovation</h2>
-                    <p>Building AI and IoT-powered solutions for real-world problems.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= Skills ================= -->
-    <section id="skills">
-        <div class="skills_middle">
-            <h2 style="color:rgb(2,175,255);">Skills and Expertise</h2>
-            <h4>Technologies and tools I work with</h4>
-        </div>
-
-        <div class="skills-container">
-            <div class="skill-card">
-                <h3>💻 Programming</h3>
-                <p>Java, Python, C</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>🗄️ Databases</h3>
-                <p>SQL, MongoDB</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>🤖 AI / ML</h3>
-                <p>TensorFlow, OpenCV</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>🔧 IoT</h3>
-                <p>Arduino, Raspberry Pi, Sensors</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>⚙️ Frontend</h3>
-                <p>HTML, CSS</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= Coding Platforms ================= -->
-    <section id="links">
-        <div class="sub1_links">
-            <h2 style="color:rgb(2,175,255);">Coding Platforms</h2>
-        </div>
-
-        <div class="links-container">
-            <div class="links-card">
-                <a href="https://leetcode.com/u/9786668578/" target="_blank" style="color:white;">LeetCode</a>
-            </div>
-            <div class="links-card">
-                <a href="https://www.skillrack.com/profile/402465" target="_blank" style="color:white;">SkillRack</a>
-            </div>
-            <div class="links-card">
-                <a href="https://www.geeksforgeeks.org/user/ragavendiran9met/" target="_blank" style="color:white;">GeeksforGeeks</a>
-            </div>
-            <div class="links-card">
-                <a href="https://github.com/Ragava2004" target="_blank" style="color:white;">GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= Projects ================= -->
-    <section id="projects">
-        <div class="sub1_projects">
-            <h2 style="color:rgb(2,175,255);">Projects</h2>
-            <h4>Recent works showcasing my skills</h4>
-        </div>
-
-        <div class="projects_container">
-            <div class="left_side_projects">
-                <h3 style="color:rgb(116,211,255);">Conveyor Belt Breakdown Detector</h3>
-                <p>
-                    IoT-based system using ESP32-CAM and ML to detect conveyor belt cracks,
-                    predict maintenance, and monitor belt health.
-                </p>
-                <img src="images/Conveyor_project.jpg" width="100%" alt="Project">
-            </div>
-
-            <div class="right_side_projects">
-                <h3 style="color:rgb(116,211,255);">Portfolio Website</h3>
-                <p>Personal portfolio built using HTML, CSS, and Bootstrap.</p>
-                <img src="images/portfolio.JPG" width="100%" alt="Portfolio">
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= Contact ================= -->
-    <section id="contact">
-        <div class="sub1_contact">
-            <h2 style="color:rgb(2,175,255);">Get in Touch</h2>
-            <h4>Let’s collaborate or connect!</h4>
-        </div>
-
-        <div class="contact-container">
-            <div class="left_side_contact">
-                <div class="mail-card">
-                    <h3>Email</h3>
-                    <p>ragavendiran.2004jamuna@gmail.com</p>
-                </div>
-                <br>
-                <div class="phone-card">
-                    <h3>Phone</h3>
-                    <p>+91 9786668578</p>
-                </div>
-            </div>
-
-            <div class="right_side_contact">
-                <h3>Send a Message</h3>
-                <form action="mailto:ragavendiran.2004jamuna@gmail.com" method="post" enctype="text/plain">
-                    <input type="text" placeholder="Your Name" style="width:100%;font-size:large;"><br><br>
-                    <input type="email" placeholder="Your Email" style="width:100%;font-size:large;"><br><br>
-                    <textarea rows="4" placeholder="Message" style="width:100%;font-size:large;"></textarea><br><br>
-                    <button class="btn btn-danger" style="width:100%;">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <br><br>
-
-    <div class="last-section">
-        <p>© 2026 Ragavendiran P</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="primary-btn">Send Message</button>
+        </form>
     </div>
+</section>
 
-    <!-- JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+<!-- ================= Footer ================= -->
+<footer class="footer">
+    <p>© 2026 Ragavendiran P | Built with HTML & CSS</p>
+</footer>
 
 </body>
 </html>

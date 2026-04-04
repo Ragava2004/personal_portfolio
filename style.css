@@ -23,7 +23,7 @@ a { color: var(--accent); text-decoration: none; }
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 16px 10%;
+    padding: 20px 10%;
     background: #11162a;
 }
 

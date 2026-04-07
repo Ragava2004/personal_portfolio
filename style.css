@@ -16,6 +16,7 @@ html, body {
     background: var(--bg);
     color: var(--text);
     font-family: system-ui, sans-serif;
+    scroll-behavior: smooth;
 }
 
 a { color: var(--accent); text-decoration: none; }

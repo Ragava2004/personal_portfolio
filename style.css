@@ -22,6 +22,10 @@ html, body {
 a { color: var(--accent); text-decoration: none; }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
